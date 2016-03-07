@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ssg-7u-g4f">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="toT-3M-wnx">
+            <objects>
+                <navigationController id="Ssg-7u-g4f" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0bp-Kk-6j7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="N5h-3e-BFa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tr3-uA-82Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="417"/>
+        </scene>
+        <!--chenzhenJG-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPy-wZ-SaK">
+                                <rect key="frame" x="0.0" y="64" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.50385802984237671" green="0.84510481357574463" blue="0.99979168176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="pZL-fU-ffo"/>
+                                    <constraint firstAttribute="width" constant="200" id="qbC-4H-Mhi"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="pebbles.jpg"/>
+                                <connections>
+                                    <segue destination="Pkn-4u-B7q" kind="push" id="gSi-jk-nUS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gPy-wZ-SaK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1rx-TA-oA2"/>
+                            <constraint firstItem="gPy-wZ-SaK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8eq-vF-h2f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="chenzhenJG" id="3fe-UN-eoe"/>
+                    <connections>
+                        <outlet property="submitView" destination="gPy-wZ-SaK" id="YVb-BM-8L9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="417"/>
+        </scene>
+        <!--Two Controller View Controller-->
+        <scene sceneID="Qx5-Bp-PqL">
+            <objects>
+                <viewController id="Pkn-4u-B7q" customClass="TwoControllerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l5X-5T-sRl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ca5-iV-wmK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Pq-Dm-bIl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFn-Zc-HcX">
+                                <rect key="frame" x="175" y="64" width="250" height="300"/>
+                                <color key="backgroundColor" red="0.50385802984237671" green="0.84510481357574463" blue="0.99979168176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="v1d-Fs-3US"/>
+                                    <constraint firstAttribute="width" constant="250" id="yCW-jM-BOL"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="pebbles.jpg"/>
+                                <connections>
+                                    <action selector="pop:" destination="Pkn-4u-B7q" eventType="touchUpInside" id="xhv-eQ-mf7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk is cheap, show me the code(ོ•̀⌄•)-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgw-XO-Od7">
+                                <rect key="frame" x="151" y="417" width="298" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Pok-ML-N2k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KFn-Zc-HcX" firstAttribute="leading" secondItem="1Pq-Dm-bIl" secondAttribute="leadingMargin" constant="40" id="4M5-qB-Vcn"/>
+                            <constraint firstItem="KFn-Zc-HcX" firstAttribute="centerX" secondItem="1Pq-Dm-bIl" secondAttribute="centerX" id="ZqC-mb-9nl"/>
+                            <constraint firstItem="KFn-Zc-HcX" firstAttribute="top" secondItem="l5X-5T-sRl" secondAttribute="bottom" id="g2s-Gm-JqU"/>
+                            <constraint firstItem="pgw-XO-Od7" firstAttribute="top" secondItem="KFn-Zc-HcX" secondAttribute="bottom" constant="53" id="hTc-ji-iqu"/>
+                            <constraint firstItem="pgw-XO-Od7" firstAttribute="centerX" secondItem="KFn-Zc-HcX" secondAttribute="centerX" id="nxN-jT-poW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4M5-qB-Vcn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Eg-dU-r9U"/>
+                    <connections>
+                        <outlet property="backView" destination="KFn-Zc-HcX" id="aYk-Uz-1F8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygy-nL-ClM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="417"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pebbles.jpg" width="1001" height="1334"/>
+    </resources>
+</document>
