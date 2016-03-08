@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CCControllerAnimationPush : NSObject<UIViewControllerAnimatedTransitioning,UINavigationControllerDelegate>
+@interface CCControllerAnimationPush : NSObject<UIViewControllerAnimatedTransitioning>
 
 
 @end
